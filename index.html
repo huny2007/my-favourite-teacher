@@ -47,11 +47,8 @@
            ========================================= */
 
         .opening-screen {
-
             position: fixed;
-
             inset: 0;
-
             z-index: 9999;
 
             display: flex;
@@ -71,25 +68,19 @@
         }
 
         .opening-screen.hidden {
-
             opacity: 0;
             visibility: hidden;
-
             pointer-events: none;
         }
 
         .opening-card {
-
             width: min(90%, 500px);
-
             padding: 55px 35px;
-
             text-align: center;
 
             background: rgba(255,255,255,0.85);
 
             border: 3px solid #f9c5d3;
-
             border-radius: 35px;
 
             box-shadow:
@@ -100,40 +91,27 @@
         }
 
         .opening-flower {
-
             font-size: 55px;
-
             margin-bottom: 15px;
-
             animation: flowerPulse 2s ease-in-out infinite;
         }
 
         .opening-card h2 {
-
             font-family: 'Dancing Script', cursive;
-
             font-size: clamp(38px, 8vw, 58px);
-
             color: #d35f82;
-
             margin-bottom: 12px;
         }
 
         .opening-card p {
-
             font-size: 15px;
-
             color: #96737d;
-
             margin-bottom: 28px;
         }
 
         .open-button {
-
             border: none;
-
             padding: 14px 32px;
-
             border-radius: 50px;
 
             background: linear-gradient(
@@ -145,9 +123,7 @@
             color: white;
 
             font-family: 'Nunito', sans-serif;
-
             font-size: 15px;
-
             font-weight: 700;
 
             cursor: pointer;
@@ -160,9 +136,7 @@
         }
 
         .open-button:hover {
-
             transform: scale(1.08);
-
             box-shadow: 0 12px 28px rgba(211,95,130,0.28);
         }
 
@@ -172,7 +146,6 @@
            ========================================= */
 
         .music-button {
-
             position: fixed;
 
             top: 20px;
@@ -195,9 +168,7 @@
             border-radius: 50px;
 
             font-family: 'Nunito', sans-serif;
-
             font-size: 13px;
-
             font-weight: 700;
 
             cursor: pointer;
@@ -210,14 +181,12 @@
         }
 
         .music-button:hover {
-
             transform: translateX(-50%) scale(1.05);
 
             box-shadow: 0 10px 25px rgba(211,95,130,0.2);
         }
 
         .music-button.playing {
-
             animation: musicPulse 2s ease-in-out infinite;
         }
 
@@ -227,9 +196,7 @@
            ========================================= */
 
         .butterfly {
-
             position: fixed;
-
             z-index: 2;
 
             font-size: 28px;
@@ -244,47 +211,34 @@
         }
 
         .butterfly:nth-child(1) {
-
             left: -5%;
             top: 20%;
-
             animation-delay: 0s, 0s;
-
             font-size: 30px;
         }
 
         .butterfly:nth-child(2) {
-
             left: -10%;
             top: 60%;
-
             animation-delay: 5s, 0.5s;
-
             font-size: 24px;
         }
 
         .butterfly:nth-child(3) {
-
             left: -8%;
             top: 40%;
-
             animation-delay: 9s, 1s;
-
             font-size: 34px;
         }
 
         .butterfly:nth-child(4) {
-
             left: -5%;
             top: 78%;
-
             animation-delay: 13s, 0.2s;
-
             font-size: 22px;
         }
 
         @keyframes butterflyFly {
-
             0% {
                 transform: translateX(-10vw) translateY(0) rotate(0deg);
             }
@@ -307,7 +261,6 @@
         }
 
         @keyframes butterflyWiggle {
-
             0%, 100% {
                 margin-top: 0;
             }
@@ -323,9 +276,7 @@
            ========================================= */
 
         .heart {
-
             position: fixed;
-
             z-index: 9000;
 
             pointer-events: none;
@@ -336,9 +287,7 @@
         }
 
         @keyframes heartRise {
-
             0% {
-
                 opacity: 1;
 
                 transform:
@@ -348,7 +297,6 @@
             }
 
             100% {
-
                 opacity: 0;
 
                 transform:
@@ -367,9 +315,7 @@
            ========================================= */
 
         .confetti {
-
             position: fixed;
-
             z-index: 8999;
 
             width: 8px;
@@ -381,9 +327,7 @@
         }
 
         @keyframes confettiFall {
-
             0% {
-
                 opacity: 1;
 
                 transform:
@@ -392,7 +336,6 @@
             }
 
             100% {
-
                 opacity: 0;
 
                 transform:
@@ -410,9 +353,7 @@
            ========================================= */
 
         .container {
-
             width: 100%;
-
             max-width: 850px;
 
             padding: 90px 25px 70px;
@@ -420,7 +361,6 @@
             text-align: center;
 
             position: relative;
-
             z-index: 5;
 
             opacity: 0;
@@ -429,7 +369,6 @@
         }
 
         body.opened .container {
-
             opacity: 1;
         }
 
@@ -439,11 +378,9 @@
            ========================================= */
 
         .small-heading {
-
             font-family: 'Nunito', sans-serif;
 
             font-size: 13px;
-
             font-weight: 700;
 
             letter-spacing: 3px;
@@ -463,7 +400,6 @@
            ========================================= */
 
         h1 {
-
             font-family: 'Dancing Script', cursive;
 
             font-size: clamp(48px, 9vw, 82px);
@@ -486,7 +422,6 @@
         }
 
         h1::after {
-
             content: "";
 
             display: inline-block;
@@ -505,12 +440,10 @@
         }
 
         h1.finished::after {
-
             display: none;
         }
 
         @keyframes blinkCursor {
-
             0%, 50% {
                 opacity: 1;
             }
@@ -526,9 +459,7 @@
            ========================================= */
 
         .line {
-
             width: 90px;
-
             height: 4px;
 
             background: linear-gradient(
@@ -551,9 +482,7 @@
            ========================================= */
 
         .photo-container {
-
             display: flex;
-
             justify-content: center;
 
             margin-bottom: 50px;
@@ -562,7 +491,6 @@
         }
 
         .photo-frame {
-
             padding: 12px;
 
             background: #ffffff;
@@ -583,7 +511,6 @@
         }
 
         .photo-frame:hover {
-
             transform:
                 scale(1.025)
                 rotate(1deg);
@@ -594,7 +521,6 @@
         }
 
         .photo-frame img {
-
             display: block;
 
             width: min(100%, 600px);
@@ -612,7 +538,6 @@
            ========================================= */
 
         .quote-section {
-
             max-width: 700px;
 
             margin: 0 auto 60px;
@@ -636,7 +561,6 @@
         }
 
         .quote-section:hover {
-
             transform: translateY(-6px);
 
             box-shadow:
@@ -644,7 +568,6 @@
         }
 
         .quote-mark {
-
             font-family: Georgia, serif;
 
             font-size: 65px;
@@ -657,7 +580,6 @@
         }
 
         .quote {
-
             font-family: 'Dancing Script', cursive;
 
             font-size: clamp(25px, 4vw, 35px);
@@ -668,7 +590,6 @@
         }
 
         .author {
-
             margin-top: 25px;
 
             font-family: 'Nunito', sans-serif;
@@ -690,7 +611,6 @@
            ========================================= */
 
         .poem-section {
-
             max-width: 650px;
 
             margin: 0 auto 70px;
@@ -713,14 +633,12 @@
         }
 
         .poem-section:hover {
-
             transform:
                 translateY(-6px)
                 rotate(-0.4deg);
         }
 
         .poem-title {
-
             font-family: 'Dancing Script', cursive;
 
             font-size: 34px;
@@ -733,7 +651,6 @@
         }
 
         .poem {
-
             font-family: Georgia, serif;
 
             font-size: 19px;
@@ -751,7 +668,6 @@
            ========================================= */
 
         .message {
-
             max-width: 620px;
 
             margin: 0 auto 70px;
@@ -780,7 +696,6 @@
         }
 
         .message:hover {
-
             transform: translateY(-5px);
 
             box-shadow:
@@ -793,7 +708,6 @@
            ========================================= */
 
         .playlist-section {
-
             animation: fadeUp 2.4s ease;
 
             transition: transform 0.35s ease;
@@ -802,12 +716,10 @@
         }
 
         .playlist-section:hover {
-
             transform: translateY(-3px);
         }
 
         .playlist-title {
-
             font-family: 'Dancing Script', cursive;
 
             font-size: 38px;
@@ -820,7 +732,6 @@
         }
 
         .playlist-subtitle {
-
             font-family: 'Nunito', sans-serif;
 
             color: #96737d;
@@ -831,7 +742,6 @@
         }
 
         .spotify {
-
             width: 100%;
 
             max-width: 650px;
@@ -851,7 +761,6 @@
         }
 
         .spotify iframe {
-
             width: 100%;
 
             height: 352px;
@@ -867,7 +776,6 @@
            ========================================= */
 
         .side-quest {
-
             max-width: 700px;
 
             margin: 100px auto 100px;
@@ -895,7 +803,6 @@
         }
 
         .side-quest::before {
-
             content: "✦";
 
             position: absolute;
@@ -911,7 +818,6 @@
         }
 
         .side-quest::after {
-
             content: "✦";
 
             position: absolute;
@@ -927,7 +833,6 @@
         }
 
         .quest-badge {
-
             display: inline-block;
 
             padding: 7px 15px;
@@ -950,7 +855,6 @@
         }
 
         .quest-title {
-
             font-family: 'Dancing Script', cursive;
 
             font-size: clamp(40px, 8vw, 58px);
@@ -961,7 +865,6 @@
         }
 
         .quest-subtitle {
-
             color: #96737d;
 
             font-size: 14px;
@@ -972,7 +875,6 @@
         }
 
         .quest-start-button {
-
             border: none;
 
             padding: 15px 32px;
@@ -1004,7 +906,6 @@
         }
 
         .quest-start-button:hover {
-
             transform: scale(1.07);
 
             box-shadow:
@@ -1012,7 +913,6 @@
         }
 
         .quiz-container {
-
             display: none;
 
             margin-top: 30px;
@@ -1021,12 +921,10 @@
         }
 
         .quiz-container.active {
-
             display: block;
         }
 
         .question-number {
-
             font-size: 12px;
 
             font-weight: 800;
@@ -1041,7 +939,6 @@
         }
 
         .question {
-
             font-family: 'Dancing Script', cursive;
 
             font-size: clamp(28px, 5vw, 40px);
@@ -1054,7 +951,6 @@
         }
 
         .options {
-
             display: grid;
 
             grid-template-columns: repeat(2, 1fr);
@@ -1067,7 +963,6 @@
         }
 
         .option-button {
-
             border: 2px solid #f5cbd7;
 
             background: #fff;
@@ -1093,7 +988,6 @@
         }
 
         .option-button:hover {
-
             transform: translateY(-3px);
 
             background: #fff6f9;
@@ -1102,7 +996,6 @@
         }
 
         .option-button.correct {
-
             background: #fff1b8;
 
             border-color: #e8c64d;
@@ -1113,7 +1006,6 @@
         }
 
         .option-button.wrong {
-
             background: #ffe7ed;
 
             border-color: #e6a0b5;
@@ -1122,7 +1014,6 @@
         }
 
         .quiz-feedback {
-
             min-height: 30px;
 
             margin-top: 18px;
@@ -1135,7 +1026,6 @@
         }
 
         .progress-bar {
-
             width: 100%;
 
             max-width: 500px;
@@ -1152,7 +1042,6 @@
         }
 
         .progress-fill {
-
             height: 100%;
 
             width: 0%;
@@ -1174,19 +1063,16 @@
            ========================================= */
 
         .award-screen {
-
             display: none;
 
             animation: awardAppear 1s ease;
         }
 
         .award-screen.active {
-
             display: block;
         }
 
         .award-trophy {
-
             font-size: 75px;
 
             display: block;
@@ -1198,7 +1084,6 @@
         }
 
         .award-title {
-
             font-family: 'Dancing Script', cursive;
 
             font-size: clamp(42px, 8vw, 70px);
@@ -1211,7 +1096,6 @@
         }
 
         .award-message {
-
             font-size: 17px;
 
             line-height: 1.8;
@@ -1224,12 +1108,10 @@
         }
 
         .award-message strong {
-
             color: #d35f82;
         }
 
         .award-seal {
-
             display: inline-block;
 
             margin-top: 25px;
@@ -1255,11 +1137,356 @@
 
 
         /* =========================================
-           FINAL THANK YOU
+           PLANT A THANK-YOU
+           ========================================= */
+
+        .flower-section {
+            max-width: 700px;
+
+            margin: 120px auto 100px;
+
+            padding: 50px 25px 60px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(255,255,255,0.95),
+                    rgba(255,249,239,0.95)
+                );
+
+            border: 3px solid #f9d1dc;
+
+            border-radius: 35px;
+
+            box-shadow:
+                0 15px 40px rgba(211,95,130,0.12),
+                8px 8px 0 #ffe8a8;
+
+            overflow: hidden;
+
+            position: relative;
+        }
+
+        .flower-section::before {
+            content: "✦";
+
+            position: absolute;
+
+            top: 20px;
+            left: 30px;
+
+            color: #f3c84b;
+
+            font-size: 25px;
+
+            animation: sparkle 2s infinite;
+        }
+
+        .flower-section::after {
+            content: "✦";
+
+            position: absolute;
+
+            bottom: 25px;
+            right: 30px;
+
+            color: #f7a8bd;
+
+            font-size: 22px;
+
+            animation: sparkle 2s infinite 0.5s;
+        }
+
+        .flower-title {
+            font-family: 'Dancing Script', cursive;
+
+            font-size: clamp(38px, 8vw, 55px);
+
+            color: #d35f82;
+
+            margin-bottom: 10px;
+        }
+
+        .flower-subtitle {
+            font-size: 15px;
+
+            color: #96737d;
+
+            line-height: 1.7;
+
+            margin-bottom: 30px;
+        }
+
+        .plant-button {
+            border: none;
+
+            padding: 15px 30px;
+
+            border-radius: 50px;
+
+            background: linear-gradient(
+                135deg,
+                #f7a8bd,
+                #f3c84b
+            );
+
+            color: white;
+
+            font-family: 'Nunito', sans-serif;
+
+            font-size: 15px;
+
+            font-weight: 800;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 8px 22px rgba(211,95,130,0.20);
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+        .plant-button:hover {
+            transform: scale(1.07);
+
+            box-shadow:
+                0 12px 30px rgba(211,95,130,0.28);
+        }
+
+        .garden {
+            height: 300px;
+
+            position: relative;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: flex-end;
+
+            margin-top: 25px;
+
+            overflow: hidden;
+        }
+
+        .soil {
+            position: absolute;
+
+            bottom: 5px;
+
+            width: 260px;
+
+            height: 45px;
+
+            background: #c99a72;
+
+            border-radius:
+                50% 50% 35% 35%;
+
+            opacity: 0;
+
+            transform: scaleX(0.4);
+
+            transition:
+                opacity 0.8s ease,
+                transform 0.8s ease;
+        }
+
+        .planting .soil {
+            opacity: 1;
+
+            transform: scaleX(1);
+        }
+
+        .stem {
+            position: absolute;
+
+            bottom: 35px;
+
+            width: 8px;
+
+            height: 0;
+
+            background: #78a66a;
+
+            border-radius: 10px;
+
+            transform-origin: bottom;
+
+            transition: height 2.2s ease;
+        }
+
+        .planting .stem {
+            height: 170px;
+        }
+
+        .leaf {
+            position: absolute;
+
+            width: 45px;
+            height: 24px;
+
+            background: #91b978;
+
+            border-radius: 100% 0 100% 0;
+
+            opacity: 0;
+
+            transform: scale(0);
+
+            transition:
+                opacity 0.8s ease,
+                transform 0.8s ease;
+        }
+
+        .leaf-left {
+            bottom: 105px;
+            right: calc(50% + 2px);
+
+            transform-origin: right center;
+        }
+
+        .leaf-right {
+            bottom: 135px;
+            left: calc(50% + 2px);
+
+            transform-origin: left center;
+
+            border-radius:
+                0 100% 0 100%;
+        }
+
+        .bloomed .leaf {
+            opacity: 1;
+
+            transform: scale(1);
+        }
+
+        .bloomed .leaf-left {
+            transition-delay: 1.7s;
+        }
+
+        .bloomed .leaf-right {
+            transition-delay: 1.9s;
+        }
+
+        .flower-head {
+            position: absolute;
+
+            bottom: 185px;
+
+            font-size: 0;
+
+            opacity: 0;
+
+            transform:
+                scale(0)
+                rotate(-30deg);
+
+            transition:
+                opacity 0.8s ease,
+                transform 1s ease;
+        }
+
+        .bloomed .flower-head {
+            opacity: 1;
+
+            font-size: 78px;
+
+            transform:
+                scale(1)
+                rotate(0deg);
+
+            transition-delay: 2.4s;
+        }
+
+        .flower-message {
+            opacity: 0;
+
+            transform: translateY(15px);
+
+            font-family: 'Dancing Script', cursive;
+
+            font-size: clamp(24px, 5vw, 34px);
+
+            color: #815464;
+
+            margin-top: 15px;
+
+            transition:
+                opacity 1s ease,
+                transform 1s ease;
+        }
+
+        .bloomed .flower-message {
+            opacity: 1;
+
+            transform: translateY(0);
+
+            transition-delay: 3.1s;
+        }
+
+        .sparkle-flower {
+            position: absolute;
+
+            opacity: 0;
+
+            pointer-events: none;
+
+            font-size: 20px;
+        }
+
+        .bloomed .sparkle-flower {
+            animation: flowerSparkle 2.5s ease-out forwards;
+        }
+
+        .sparkle-one {
+            left: 34%;
+            bottom: 190px;
+        }
+
+        .sparkle-two {
+            right: 34%;
+            bottom: 210px;
+
+            animation-delay: 0.3s !important;
+        }
+
+        .sparkle-three {
+            left: 40%;
+            bottom: 235px;
+
+            animation-delay: 0.6s !important;
+        }
+
+        @keyframes flowerSparkle {
+            0% {
+                opacity: 0;
+                transform: scale(0) rotate(0);
+            }
+
+            30% {
+                opacity: 1;
+                transform: scale(1.3) rotate(30deg);
+            }
+
+            100% {
+                opacity: 0;
+                transform:
+                    scale(0.5)
+                    rotate(100deg)
+                    translateY(-40px);
+            }
+        }
+
+
+        /* =========================================
+           FINAL THANK YOU SCREEN
            ========================================= */
 
         .final-screen {
-
             margin-top: 100px;
 
             min-height: 70vh;
@@ -1280,14 +1507,12 @@
         }
 
         .final-screen.visible {
-
             opacity: 1;
 
             transform: translateY(0);
         }
 
         .final-card {
-
             max-width: 700px;
 
             padding: 65px 35px;
@@ -1304,18 +1529,17 @@
         }
 
         .final-heart {
-
             font-size: 55px;
 
             display: block;
 
             margin-bottom: 15px;
 
-            animation: heartBeat 1.5s ease-in-out infinite;
+            animation:
+                heartBeat 1.5s ease-in-out infinite;
         }
 
         .final-title {
-
             font-family: 'Dancing Script', cursive;
 
             font-size: clamp(45px, 9vw, 75px);
@@ -1326,7 +1550,6 @@
         }
 
         .final-message {
-
             font-family: 'Dancing Script', cursive;
 
             font-size: clamp(23px, 4vw, 31px);
@@ -1334,11 +1557,9 @@
             line-height: 1.6;
 
             color: #815464;
-
         }
 
         .final-small {
-
             margin-top: 25px;
 
             font-size: 13px;
@@ -1354,11 +1575,95 @@
 
 
         /* =========================================
+           HANDWRITTEN SIGNATURE
+           ========================================= */
+
+        .signature-area {
+            margin-top: 45px;
+
+            padding-top: 30px;
+
+            border-top: 1px solid #f4d9e0;
+
+            opacity: 0;
+
+            transform: translateY(20px);
+
+            transition:
+                opacity 1.5s ease,
+                transform 1.5s ease;
+        }
+
+        .signature-area.show {
+            opacity: 1;
+
+            transform: translateY(0);
+        }
+
+        .signature-label {
+            font-family: 'Nunito', sans-serif;
+
+            font-size: 13px;
+
+            color: #c27a91;
+
+            margin-bottom: 5px;
+        }
+
+        .signature {
+            font-family: 'Dancing Script', cursive;
+
+            font-size: clamp(38px, 8vw, 55px);
+
+            color: #d35f82;
+
+            display: inline-block;
+
+            opacity: 0;
+
+            clip-path: inset(0 100% 0 0);
+
+            transition:
+                clip-path 2.2s ease,
+                opacity 0.3s ease;
+        }
+
+        .signature-area.show .signature {
+            opacity: 1;
+
+            clip-path: inset(0 0 0 0);
+        }
+
+        .signature-heart {
+            display: inline-block;
+
+            font-size: 24px;
+
+            margin-left: 5px;
+
+            opacity: 0;
+
+            transform: scale(0);
+
+            transition:
+                opacity 0.5s ease,
+                transform 0.5s ease;
+        }
+
+        .signature-area.show .signature-heart {
+            opacity: 1;
+
+            transform: scale(1);
+
+            transition-delay: 2s;
+        }
+
+
+        /* =========================================
            FOOTER
            ========================================= */
 
         footer {
-
             margin-top: 50px;
 
             padding-top: 25px;
@@ -1382,16 +1687,13 @@
            ========================================= */
 
         @keyframes fadeUp {
-
             from {
-
                 opacity: 0;
 
                 transform: translateY(25px);
             }
 
             to {
-
                 opacity: 1;
 
                 transform: translateY(0);
@@ -1399,7 +1701,6 @@
         }
 
         @keyframes expand {
-
             from {
                 width: 0;
             }
@@ -1410,7 +1711,6 @@
         }
 
         @keyframes gentleFloat {
-
             0%, 100% {
                 transform: translateY(0);
             }
@@ -1421,7 +1721,6 @@
         }
 
         @keyframes openingFloat {
-
             0%, 100% {
                 transform: translateY(0);
             }
@@ -1432,7 +1731,6 @@
         }
 
         @keyframes flowerPulse {
-
             0%, 100% {
                 transform: scale(1);
             }
@@ -1443,7 +1741,6 @@
         }
 
         @keyframes musicPulse {
-
             0%, 100% {
                 box-shadow:
                     0 7px 20px rgba(211,95,130,0.14);
@@ -1456,7 +1753,6 @@
         }
 
         @keyframes heartBeat {
-
             0%, 100% {
                 transform: scale(1);
             }
@@ -1467,7 +1763,6 @@
         }
 
         @keyframes sparkle {
-
             0%, 100% {
                 transform: scale(1) rotate(0deg);
                 opacity: 0.5;
@@ -1480,7 +1775,6 @@
         }
 
         @keyframes correctPop {
-
             0% {
                 transform: scale(1);
             }
@@ -1495,7 +1789,6 @@
         }
 
         @keyframes shake {
-
             0%, 100% {
                 transform: translateX(0);
             }
@@ -1510,7 +1803,6 @@
         }
 
         @keyframes awardAppear {
-
             from {
                 opacity: 0;
                 transform: scale(0.8);
@@ -1523,7 +1815,6 @@
         }
 
         @keyframes trophyBounce {
-
             0%, 100% {
                 transform: translateY(0) rotate(-3deg);
             }
@@ -1541,55 +1832,44 @@
         @media (max-width: 600px) {
 
             .container {
-
                 padding:
                     85px 18px 50px;
             }
 
             h1 {
-
                 font-size: 52px;
             }
 
             .quote-section {
-
                 padding: 28px 20px;
             }
 
             .quote {
-
                 font-size: 24px;
             }
 
             .poem-section {
-
                 padding: 28px 20px;
             }
 
             .poem {
-
                 font-size: 17px;
             }
 
             .message {
-
                 font-size: 15px;
-
                 padding: 25px 20px;
             }
 
             .photo-frame {
-
                 padding: 7px;
             }
 
             .playlist-title {
-
                 font-size: 34px;
             }
 
             .music-button {
-
                 top: 12px;
 
                 font-size: 12px;
@@ -1599,50 +1879,62 @@
             }
 
             .opening-card {
-
                 padding:
                     45px 25px;
             }
 
             .final-card {
-
                 padding:
                     50px 24px;
             }
 
             .butterfly {
-
                 font-size: 22px;
             }
 
             .side-quest {
-
                 padding: 38px 18px;
             }
 
             .options {
-
                 grid-template-columns: 1fr;
             }
 
             .option-button {
-
                 padding: 13px 10px;
             }
 
             .quest-title {
-
                 font-size: 43px;
             }
 
             .award-title {
-
                 font-size: 45px;
             }
 
             .award-message {
-
                 font-size: 15px;
+            }
+
+            .flower-section {
+                padding:
+                    40px 18px 50px;
+            }
+
+            .garden {
+                height: 280px;
+            }
+
+            .soil {
+                width: 210px;
+            }
+
+            .bloomed .flower-head {
+                font-size: 65px;
+            }
+
+            .signature {
+                font-size: 42px;
             }
         }
 
@@ -1743,16 +2035,13 @@
         <!-- Heading -->
 
         <div class="small-heading">
-
             A little something for someone special
-
         </div>
 
 
         <!-- Typewriter -->
 
         <h1 id="typewriter"></h1>
-
 
         <div class="line"></div>
 
@@ -1790,9 +2079,7 @@
             </div>
 
             <div class="author">
-
                 With gratitude
-
             </div>
 
         </section>
@@ -1803,9 +2090,7 @@
         <section class="poem-section">
 
             <div class="poem-title">
-
                 O Captain! My Captain! 🌼
-
             </div>
 
             <div class="poem">
@@ -1839,15 +2124,11 @@
         <section class="playlist-section">
 
             <h2 class="playlist-title">
-
                 A Playlist For You 🎵
-
             </h2>
 
             <p class="playlist-subtitle">
-
                 Because sometimes music says what words cannot.
-
             </p>
 
             <div class="spotify">
@@ -1910,20 +2191,17 @@
 
                 <div
                     class="question"
-                    id="questionText"
-                >
+                    id="questionText">
                 </div>
 
                 <div
                     class="options"
-                    id="optionsContainer"
-                >
+                    id="optionsContainer">
                 </div>
 
                 <div
                     class="quiz-feedback"
-                    id="quizFeedback"
-                >
+                    id="quizFeedback">
                 </div>
 
                 <div class="progress-bar">
@@ -1975,11 +2253,71 @@
                 </p>
 
                 <div class="award-seal">
-
                     ⭐ Achievement Unlocked ⭐
-
                 </div>
 
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             PLANT A THANK-YOU
+             ========================================= -->
+
+        <section class="flower-section" id="flowerSection">
+
+            <h2 class="flower-title">
+                Plant a Thank-You 🌱
+            </h2>
+
+            <p class="flower-subtitle">
+                Some teachers help students grow.<br>
+                Now it's time to grow a little thank-you for you.
+            </p>
+
+            <button
+                class="plant-button"
+                id="plantButton"
+                onclick="plantFlower()"
+            >
+                🌱 Plant a Thank-You
+            </button>
+
+
+            <div
+                class="garden"
+                id="garden"
+            >
+
+                <div class="soil"></div>
+
+                <div class="stem"></div>
+
+                <div class="leaf leaf-left"></div>
+
+                <div class="leaf leaf-right"></div>
+
+                <div class="flower-head">
+                    🌸
+                </div>
+
+                <div class="sparkle-flower sparkle-one">
+                    ✨
+                </div>
+
+                <div class="sparkle-flower sparkle-two">
+                    ✦
+                </div>
+
+                <div class="sparkle-flower sparkle-three">
+                    ✨
+                </div>
+
+            </div>
+
+            <div class="flower-message">
+                Thank you for helping us grow. 🌷
             </div>
 
         </section>
@@ -2001,9 +2339,7 @@
                 </span>
 
                 <h2 class="final-title">
-
                     Thank You
-
                 </h2>
 
                 <div class="final-message">
@@ -2016,8 +2352,28 @@
                 </div>
 
                 <div class="final-small">
-
                     With all my gratitude ♡
+                </div>
+
+
+                <!-- HANDWRITTEN SIGNATURE -->
+
+                <div
+                    class="signature-area"
+                    id="signatureArea"
+                >
+
+                    <div class="signature-label">
+                        With love,
+                    </div>
+
+                    <span class="signature">
+                        Hunaiza Jamal
+                    </span>
+
+                    <span class="signature-heart">
+                        ❤️
+                    </span>
 
                 </div>
 
@@ -2029,9 +2385,7 @@
         <!-- Footer -->
 
         <footer>
-
             Made with appreciation ♡
-
         </footer>
 
 
@@ -2067,7 +2421,8 @@
            TYPEWRITER EFFECT
            ========================================= */
 
-        const titleText = "My Favourite Teacher";
+        const titleText =
+            "My Favourite Teacher";
 
         let typeIndex = 0;
 
@@ -2140,11 +2495,9 @@
                         )
                     ];
 
-                heart.style.left =
-                    "50%";
+                heart.style.left = "50%";
 
-                heart.style.top =
-                    "48%";
+                heart.style.top = "48%";
 
                 heart.style.setProperty(
                     "--x",
@@ -2166,11 +2519,8 @@
 
                 document.body.appendChild(heart);
 
-
                 setTimeout(() => {
-
                     heart.remove();
-
                 }, 4000);
 
             }
@@ -2207,11 +2557,9 @@
                         )
                     ];
 
-                piece.style.left =
-                    "50%";
+                piece.style.left = "50%";
 
-                piece.style.top =
-                    "45%";
+                piece.style.top = "45%";
 
                 piece.style.fontSize =
                     `${Math.random() * 8 + 6}px`;
@@ -2231,11 +2579,8 @@
 
                 document.body.appendChild(piece);
 
-
                 setTimeout(() => {
-
                     piece.remove();
-
                 }, 4500);
 
             }
@@ -2531,18 +2876,123 @@
 
             createConfetti();
 
+
             setTimeout(() => {
-
                 createHearts();
-
             }, 1200);
 
 
             setTimeout(() => {
-
                 createConfetti();
-
             }, 700);
+
+        }
+
+
+        /* =========================================
+           PLANT A THANK-YOU
+           ========================================= */
+
+        let flowerPlanted = false;
+
+
+        function plantFlower() {
+
+            if (flowerPlanted) {
+                return;
+            }
+
+            flowerPlanted = true;
+
+            const garden =
+                document.getElementById("garden");
+
+            const button =
+                document.getElementById("plantButton");
+
+            garden.classList.add("planting");
+
+            button.textContent =
+                "🌱 Growing your thank-you...";
+
+            button.disabled = true;
+
+            setTimeout(() => {
+
+                garden.classList.add("bloomed");
+
+                button.textContent =
+                    "🌸 Thank-You Has Bloomed!";
+
+                createFlowerHearts();
+
+            }, 2200);
+
+        }
+
+
+        /* =========================================
+           FLOWER HEARTS
+           ========================================= */
+
+        function createFlowerHearts() {
+
+            const symbols = [
+                "🌸",
+                "💗",
+                "✨",
+                "🌷",
+                "💕"
+            ];
+
+            for (let i = 0; i < 20; i++) {
+
+                setTimeout(() => {
+
+                    const heart =
+                        document.createElement("div");
+
+                    heart.className =
+                        "heart";
+
+                    heart.innerHTML =
+                        symbols[
+                            Math.floor(
+                                Math.random() *
+                                symbols.length
+                            )
+                        ];
+
+                    heart.style.left =
+                        `${35 + Math.random() * 30}%`;
+
+                    heart.style.top =
+                        `${45 + Math.random() * 20}%`;
+
+                    heart.style.setProperty(
+                        "--x",
+                        `${(Math.random() - 0.5) * 300}px`
+                    );
+
+                    heart.style.setProperty(
+                        "--y",
+                        `${-Math.random() * 300 - 50}px`
+                    );
+
+                    heart.style.setProperty(
+                        "--rotation",
+                        `${(Math.random() - 0.5) * 80}deg`
+                    );
+
+                    document.body.appendChild(heart);
+
+                    setTimeout(() => {
+                        heart.remove();
+                    }, 3500);
+
+                }, i * 100);
+
+            }
 
         }
 
@@ -2578,6 +3028,18 @@
                                 createFinalHearts();
 
                                 finalHeartsCreated = true;
+
+                                /* Start handwritten signature */
+
+                                setTimeout(() => {
+
+                                    document
+                                        .getElementById(
+                                            "signatureArea"
+                                        )
+                                        .classList.add("show");
+
+                                }, 1200);
 
                             }
 
@@ -2651,9 +3113,7 @@
 
 
                     setTimeout(() => {
-
                         heart.remove();
-
                     }, 3500);
 
                 }, i * 180);
@@ -2661,7 +3121,6 @@
             }
 
         }
-
 
     </script>
 
